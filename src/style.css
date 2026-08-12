@@ -2,6 +2,7 @@ body {
   --main-color: #000;
   --active-color: #00acdc;
   --text-size: 12px;
+  --header-height: 60px;
 
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -12,6 +13,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .header__logo {
@@ -35,7 +37,9 @@ body {
   text-decoration: none;
   color: var(--main-color);
   font-size: var(--text-size);
-  height: 60px;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
 }
 
@@ -53,7 +57,7 @@ body {
   background-color: var(--active-color);
   width: 100%;
   height: 4px;
-  top: 18.5px;
+  top: 60px;
   left: 0;
   border-radius: 8px;
 }
