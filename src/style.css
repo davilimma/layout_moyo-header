@@ -49,6 +49,7 @@ body {
 
 .is-active {
   position: relative;
+  color: var(--active-color);
 }
 
 .is-active::after {
